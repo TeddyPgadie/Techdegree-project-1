@@ -1,2 +1,3 @@
 # Techdegree-project-1
- First project
+ first Project 
+ A random quotes generator 
