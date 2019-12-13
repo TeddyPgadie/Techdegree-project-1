@@ -12,30 +12,28 @@ let quotes = [
   {
     quote: "Where there are experts there will be no lack of learners.",
     source: "Swahili Proverb",
-    tag: "Education"
+    tag: " Education"
   },
   {
     quote: "You learn how to cut down trees by cutting them down.",
-    source: "Bateke proverb",
-    tag: "Business"
+    source: "Bateke proverb"
   },
   {
     quote:
       "Your current situation doesn't determine your destination... you do!",
     source: "Coach jae",
-    citation: "iamlifeskills",
-    year: "2000",
-    tag: "life"
+    citation: " iamlifeskills",
+    year: " 2000",
+    tag: " life"
   },
   {
     quote: "To get lost is to learn the way.",
     source: "African proverb",
-    tag: "humor"
+    tag: " humor"
   },
   {
     quote: "By crawling a child learns to stand.",
-    source: "African proverb",
-    tag: "life"
+    source: "African proverb"
   }
 ];
 
@@ -100,6 +98,11 @@ function printQuote() {
   if (obj.year) {
     print += '<span class="year">' + obj.year + "</span>";
   }
+
+  if (obj.tag) {
+    print += '<span class="tag">' + obj.tag + "</span>";
+  }
+
   ("</p>");
   print += '<p class="source">' + obj.tag + "</p>";
   document.getElementById("quote-box").innerHTML = print;
