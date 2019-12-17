@@ -23,7 +23,7 @@ let quotes = [
       "Your current situation doesn't determine your destination... you do!",
     source: "Coach jae",
     citation: " iamlifeskills",
-    year: " 2000",
+    year: 2000,
     tag: " life"
   },
   {
@@ -102,9 +102,8 @@ function printQuote() {
   if (obj.tag) {
     print += '<span class="tag">' + obj.tag + "</span>";
   }
-
   ("</p>");
-  print += '<p class="source">' + obj.tag + "</p>";
+
   document.getElementById("quote-box").innerHTML = print;
   document.getElementById("body").style.backgroundColor = Color;
 
@@ -122,7 +121,7 @@ funtion by setting the ID  variable to zero everytime
 it is called. 
 ***/
 function startTimer() {
-  ID = setInterval(printQuote, 2000);
+  ID = setInterval(printQuote, 20000);
 }
 // explain the function in comment
 function TimeClear() {
