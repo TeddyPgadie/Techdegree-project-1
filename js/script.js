@@ -41,13 +41,13 @@ let colors = ["black", "yellow", "green", "red", "purple", "blue", "pink"];
 let ID;
 
 /***
-                                   * what the getRandomQuote() function does ?
-                                        The function getRandomQuote() iterate through the quotes array 
-                                        and return a quote in the console.The rand variable is created 
-                                        to save random number generated between 0 and the quote's array
-                                        length. Since rand just hold a number, lets plug it in between
-                                        the bracket of the array (quotes[]) and retrun that value.
-                                  ***/
+what the getRandomQuote() function does ?
+The function getRandomQuote() iterate through the quotes array 
+and return a quote in the console.The rand variable is created 
+to save random number generated between 0 and the quote's array
+length. Since rand just hold a number, lets plug it in between
+the bracket of the array (quotes[]) and retrun that value.
+***/
 
 function getRandomQuote() {
   let rand = Math.floor(Math.random() * quotes.length);
@@ -55,12 +55,12 @@ function getRandomQuote() {
 }
 
 /***                                    
-                                        what the getRandomColors() function does ?
-                                         i created this function in the same format as the
-                                         getRandomQuote() function. This function will
-                                         randomly select a color from the 'colors' array
-                                         created above.
-                                   ***/
+what the getRandomColors() function does ?
+i created this function in the same format as the
+getRandomQuote() function. This function will
+randomly select a color from the 'colors' array
+created above.
+***/
 
 function getRandomColors() {
   let rand = Math.floor(Math.random() * colors.length);
@@ -68,19 +68,19 @@ function getRandomColors() {
 }
 
 /***
-                                   * what the printQuote() function does ? 
-                                        First i created a variable 'obj' in which i am saving the function 
-                                        getRandomQuote(), this variable will later be used in the function to 
-                                        reach every property containing the actual quotes that need to be displayed.
-                                        the printQuote function hold the 'print' variable that will be 
-                                        used to print all Quotes on the screen. The printQuote function 
-                                        also text for the presence of certain properties: citation and year
-                                        before printing their value. 
+what the printQuote() function does ? 
+First i created a variable 'obj' in which i am saving the function 
+getRandomQuote(), this variable will later be used in the function to 
+reach every property containing the actual quotes that need to be displayed.
+the printQuote function hold the 'print' variable that will be 
+used to print all Quotes on the screen. The printQuote function 
+also text for the presence of certain properties: citation and year
+before printing their value. 
 
-                                        the 'Color' variable hold the getRandomColors() function 
-                                        which is being assign to the targeted body of the HTML in order 
-                                        to change the background color.    
-                                  ***/
+the 'Color' variable hold the getRandomColors() function 
+which is being assign to the targeted body of the HTML in order 
+to change the background color.    
+***/
 
 function printQuote() {
   let obj = getRandomQuote();
@@ -112,17 +112,17 @@ function printQuote() {
   startTimer();
 }
 /***
- *                                   what the startTimer() function does ? 
-                                        In the startTimer function I use the setInterval() 
-                                          function to change the backgroundColor and the quotes
-                                          printed to the page every 20 seconds. so setInterval is 
-                                          saved in a variable ID which is cleared in the TimeClear 
-                                          function.The TimeClear function execute the clearInterval 
-                                          funtion by setting the ID  variable to zero everytime 
-                                          it is called. 
-                                      ***/
+what the startTimer() function does ? 
+In the startTimer function I use the setInterval() 
+function to change the backgroundColor and the quotes
+printed to the page every 20 seconds. so setInterval is 
+saved in a variable ID which is cleared in the TimeClear 
+function.The TimeClear function execute the clearInterval 
+funtion by setting the ID  variable to zero everytime 
+it is called. 
+***/
 function startTimer() {
-  ID = setInterval(printQuote, 20000);
+  ID = setInterval(printQuote, 2000);
 }
 // explain the function in comment
 function TimeClear() {
