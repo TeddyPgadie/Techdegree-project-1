@@ -121,7 +121,7 @@ funtion by setting the ID  variable to zero everytime
 it is called. 
 ***/
 function startTimer() {
-  ID = setInterval(printQuote, 20000);
+  ID = setInterval(printQuote, 2000);
 }
 // explain the function in comment
 function TimeClear() {
