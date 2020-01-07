@@ -45,7 +45,7 @@ what the getRandomQuote() function does ?
 The function getRandomQuote() iterate through the quotes array 
 and return a quote in the console.The rand variable is created 
 to save random number generated between 0 and the quote's array
-length. Since rand just hold a number, lets plug it in between
+length. Since rand just hold a number, lets plug it in betwee n
 the bracket of the array (quotes[]) and retrun that value.
 ***/
 
@@ -58,7 +58,7 @@ function getRandomQuote() {
 what the getRandomColors() function does ?
 i created this function in the same format as the
 getRandomQuote() function. This function will
-randomly select a color from the 'colors' array
+randomly select a color from the 'colors' array  
 created above.
 ***/
 
@@ -84,6 +84,7 @@ to change the background color.
 
 function printQuote() {
   let obj = getRandomQuote();
+
   let Color = getRandomColors();
   let print = "";
 
@@ -113,13 +114,14 @@ function printQuote() {
 /***
 what the startTimer() function does ? 
 In the startTimer function I use the setInterval() 
-function to change the backgroundColor and the quotes
+function to change the backgroundColor and the quotes 
 printed to the page every 20 seconds. so setInterval is 
 saved in a variable ID which is cleared in the TimeClear 
 function.The TimeClear function execute the clearInterval 
 funtion by setting the ID  variable to zero everytime 
 it is called. 
 ***/
+
 function startTimer() {
   ID = setInterval(printQuote, 2000);
 }
@@ -131,3 +133,4 @@ function TimeClear() {
 document
   .getElementById("load-quote")
   .addEventListener("click", printQuote, false);
+printQuote();
