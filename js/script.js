@@ -123,7 +123,7 @@ it is called.
 ***/
 
 function startTimer() {
-  ID = setInterval(printQuote, 2000);
+  ID = setInterval(printQuote, 20000);
 }
 // explain the function in comment
 function TimeClear() {
