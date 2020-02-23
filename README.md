@@ -1,2 +1,2 @@
-# Techdegree-project-2
+# Techdegree-project-1
  Second Techdegree Project 
